@@ -1,0 +1,18 @@
+<div class="container">  
+    <form (ngSubmit) = "onSubmit()">
+        <div class="row">            
+            <div class = "col-md-12">
+              <label for=name>Username:</label>&nbsp;
+              <input type="text" name="uid" required [(ngModel)] = "customer.username" >
+            </div>
+        </div>
+        <div class="row">           
+            <div class = "col-md-12">
+              <label for=name>Password:</label>&nbsp;
+              <input type="password" name="pwd" required [(ngModel)] = "customer.password" >
+            </div>
+        </div>
+        <button type="submit" class = 'btn-info' >Login</button> &nbsp;&nbsp;
+        <button type='button' (click) = 'onRegisterCustomer()'  class='btn-info'>Register</button>        
+    </form>  
+</div>
